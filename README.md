@@ -49,14 +49,23 @@ Model checkpoints (ckpt.pt) are not included; the notebooks regenerate them.
 
 ## Training settings shared by partitions 2 and 3
 
-python train.py config/train_shakespeare_char.py with command-line overrides:
---device=cuda --compile=False --dtype=float32 --init_from=scratch --gradient_accumulation_steps=1
---learning_rate=0.001 --warmup_iters=100 --lr_decay_iters=2000 --min_lr=0.0001 --beta2=0.99
---eval_interval=250 --eval_iters=20 --log_interval=50 --always_save_checkpoint=True plus the
-partition's --block_size, --n_layer and the run's five varied hyperparameters. train.py
-seeds PyTorch with 1337. Validation loss is the original training loop's estimate over 20
-sampled batches with dropout off. Member 1's report uses a full-validation NLL instead, so its
-validation numbers are not directly comparable with partitions 2 and 3.
+Every run was launched with the same command, plus the partition's --block_size and
+--n_layer and the run's five varied hyperparameters:
+
+```bash
+python train.py config/train_shakespeare_char.py \
+    --device=cuda --compile=False --dtype=float32 --init_from=scratch \
+    --gradient_accumulation_steps=1 \
+    --learning_rate=0.001 --warmup_iters=100 --lr_decay_iters=2000 --min_lr=0.0001 --beta2=0.99 \
+    --eval_interval=250 --eval_iters=20 --log_interval=50 --always_save_checkpoint=True \
+    --block_size=64 --n_layer=6 \
+    --n_head=4 --n_embd=128 --batch_size=8 --max_iters=1000 --dropout=0.1 \
+    --out_dir=results/member2/g2_01
+```
+
+train.py seeds PyTorch with 1337. Validation loss is the original training loop's estimate
+over 20 sampled batches with dropout off. Member 1's report uses a full-validation NLL
+instead, so its validation numbers are not directly comparable with partitions 2 and 3.
 
 ## Reproduce
 
