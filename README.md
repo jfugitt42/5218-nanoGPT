@@ -1,5 +1,9 @@
 # Group 7 - Assignment 11: nanoGPT hyperparameter experiments
 
+1. Sepideh Salimi
+2. Mohammed Abutayyem
+3. Jonathan Fugitt
+
 CSCE 5218 Deep Learning, University of North Texas, Fall 2026.
 
 The assignment splits 2^7 = 128 hyperparameter combinations of Karpathy's nanoGPT on the
