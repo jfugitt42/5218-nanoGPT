@@ -1,0 +1,17 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_32
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 4.74M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+You before will and is by be madies, but our take One my datchause:
+Whith in what he that dill was, away, what fast to how
+When what to that I commil now in at misters,
+I in the staid ov the do quil 
+---------------

@@ -1,0 +1,19 @@
+Overriding: device = cpu
+Overriding: compile = False
+Overriding: out_dir = results/member3/g3_32
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 3.16M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+Whele is a men; an, thou besomes, I that not well
+dissed shall that the parth. Whom the may most throng.
+
+CORIOLANUS:
+And think you speak, and him, in is not blood hearth?
+My galle, whom my lord, too
+---------------

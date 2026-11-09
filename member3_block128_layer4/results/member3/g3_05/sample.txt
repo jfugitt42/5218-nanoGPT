@@ -1,0 +1,20 @@
+Overriding: device = cpu
+Overriding: compile = False
+Overriding: out_dir = results/member3/g3_05
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 0.80M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+A so bulesusen lovesst so shour that shou.
+POXER:
+I me here wicoust, and I so miench thow that move, day,
+I windll, the yeat my make may witht not word.
+
+AURGALA:
+I an the of of par midest a low'd yo
+---------------

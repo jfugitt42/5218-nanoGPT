@@ -1,0 +1,22 @@
+Overriding: device = cpu
+Overriding: compile = False
+Overriding: out_dir = results/member3/g3_25
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 3.16M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+And apirly to-come, thou besons,
+To the good well dead the to them be.
+
+CLARD:
+Good, my me hords thrung.
+
+COMERK:
+What whith is you sperpose I his sing good to welp to withe will no with dient
+sarren
+---------------

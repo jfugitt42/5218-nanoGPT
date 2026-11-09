@@ -1,0 +1,22 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_12
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 4.74M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+All befordide.
+
+KING RIT:
+Here a self of oure.
+
+KIO:
+I lece, haves art thy put he he that dill
+Hate aw you hat fall to hown he of the of is he cove the will,
+Whild ensen min latise in ove the deave t
+---------------

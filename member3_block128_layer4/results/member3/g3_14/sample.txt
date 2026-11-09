@@ -1,0 +1,24 @@
+Overriding: device = cpu
+Overriding: compile = False
+Overriding: out_dir = results/member3/g3_14
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 3.16M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+Whelling aide-come,
+Why so, or good that frient.
+
+CHARY VI:
+Not, and fram dest bese, my me brook; are the nother:
+What comesing your propesse.
+
+SICINIUS:
+Why stake seep, the wrathe shall my butter.
+
+
+---------------

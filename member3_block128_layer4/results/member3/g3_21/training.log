@@ -1,0 +1,103 @@
+/content/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+Overriding config with config/train_shakespeare_char.py:
+# train a miniature character-level shakespeare model
+# good for debugging and playing on macbooks and such
+
+out_dir = 'out-shakespeare-char'
+eval_interval = 250 # keep frequent because we'll overfit
+eval_iters = 200
+log_interval = 10 # don't print too too often
+
+# we expect to overfit on this small dataset, so only save when val improves
+always_save_checkpoint = False
+
+wandb_log = False # override via command line if you like
+wandb_project = 'shakespeare-char'
+wandb_run_name = 'mini-gpt'
+
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256 # context of up to 256 previous characters
+
+# baby GPT model :)
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+
+learning_rate = 1e-3 # with baby networks can afford to go a bit higher
+max_iters = 5000
+lr_decay_iters = 5000 # make equal to max_iters usually
+min_lr = 1e-4 # learning_rate / 10 usually
+beta2 = 0.99 # make a bit bigger because number of tokens per iter is small
+
+warmup_iters = 100 # not super necessary potentially
+
+# on macbook also add
+# device = 'cpu'  # run on cpu only
+# compile = False # do not torch compile the model
+
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: dtype = float32
+Overriding: init_from = scratch
+Overriding: wandb_log = False
+Overriding: block_size = 128
+Overriding: n_layer = 4
+Overriding: n_head = 8
+Overriding: n_embd = 128
+Overriding: batch_size = 16
+Overriding: max_iters = 1000
+Overriding: dropout = 0.1
+Overriding: gradient_accumulation_steps = 1
+Overriding: learning_rate = 0.001
+Overriding: warmup_iters = 100
+Overriding: lr_decay_iters = 2000
+Overriding: min_lr = 0.0001
+Overriding: beta2 = 0.99
+Overriding: eval_interval = 250
+Overriding: eval_iters = 20
+Overriding: log_interval = 50
+Overriding: always_save_checkpoint = True
+Overriding: out_dir = results/member3/g3_21
+tokens per iteration will be: 2,048
+found vocab_size = 65 (inside data/shakespeare_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 0.80M
+num decayed parameter tensors: 18, with 811,136 parameters
+num non-decayed parameter tensors: 9, with 1,152 parameters
+using fused AdamW: True
+step 0: train loss 4.1837, val loss 4.1801
+iter 0: loss 4.1833, time 407.68ms, mfu -100.00%
+iter 50: loss 2.9076, time 7.83ms, mfu 0.47%
+iter 100: loss 2.5989, time 8.00ms, mfu 0.47%
+iter 150: loss 2.5208, time 8.12ms, mfu 0.46%
+iter 200: loss 2.4670, time 8.14ms, mfu 0.46%
+step 250: train loss 2.4463, val loss 2.4519
+saving checkpoint to results/member3/g3_21
+iter 250: loss 2.4209, time 154.86ms, mfu 0.42%
+iter 300: loss 2.3877, time 8.28ms, mfu 0.42%
+iter 350: loss 2.4646, time 8.05ms, mfu 0.42%
+iter 400: loss 2.4015, time 8.46ms, mfu 0.42%
+iter 450: loss 2.3956, time 8.69ms, mfu 0.42%
+step 500: train loss 2.2940, val loss 2.3340
+saving checkpoint to results/member3/g3_21
+iter 500: loss 2.3419, time 155.07ms, mfu 0.38%
+iter 550: loss 2.2775, time 7.99ms, mfu 0.39%
+iter 600: loss 2.2725, time 8.14ms, mfu 0.40%
+iter 650: loss 2.2532, time 8.00ms, mfu 0.40%
+iter 700: loss 2.2300, time 8.41ms, mfu 0.41%
+step 750: train loss 2.1478, val loss 2.1854
+saving checkpoint to results/member3/g3_21
+iter 750: loss 2.1899, time 169.55ms, mfu 0.37%
+iter 800: loss 2.1862, time 8.14ms, mfu 0.38%
+iter 850: loss 2.1960, time 8.11ms, mfu 0.38%
+iter 900: loss 2.1191, time 7.91ms, mfu 0.39%
+iter 950: loss 2.1346, time 14.54ms, mfu 0.38%
+step 1000: train loss 2.0305, val loss 2.1118
+saving checkpoint to results/member3/g3_21
+iter 1000: loss 2.1480, time 196.49ms, mfu 0.34%
+Final checkpoint saved to results/member3/g3_21/ckpt.pt
+PEAK_GPU_MEMORY_MB: 100.52294921875

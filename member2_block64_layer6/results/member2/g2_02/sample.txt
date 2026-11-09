@@ -1,0 +1,24 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_02
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 1.19M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+Al the Ror we wild to on, be mad and bube ale.
+
+
+
+OSE SMANCELUNGOX:
+Whith fous he he thar dilas ane ar ceamy.
+
+
+DEROYINGIING:
+Youst, tof is he me my welill, at miree senghin;
+Sit mail ove spand ben p
+---------------

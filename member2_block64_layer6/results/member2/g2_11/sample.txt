@@ -1,0 +1,19 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_11
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 4.74M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+All beford will and is so be madiest but of enament-a my day,
+and bart thy put he here ared laccaues will my facts',
+And to he of the coust here this nown.
+
+KING RICHARD III:
+Sir, therev the do me lo
+---------------

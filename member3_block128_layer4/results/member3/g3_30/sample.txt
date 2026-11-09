@@ -1,0 +1,20 @@
+Overriding: device = cpu
+Overriding: compile = False
+Overriding: out_dir = results/member3/g3_30
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 3.16M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+Whele is all'd take! For of ould,
+I that friciend deas that goth his fraced
+Thou somen the brook thrue quee feas: I he comesing your propose.
+
+LAUNCE:
+When I stay putty tuch wrack your,
+Thee ared to 
+---------------

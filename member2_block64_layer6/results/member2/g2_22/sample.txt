@@ -1,0 +1,20 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_22
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 1.19M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+You becht you will thal fert madisen beay to tand Ond my dolatangs:
+Whit he us hit ther ceetlas ane awich my.
+
+
+DUEETINGIIN TIY:
+Whert ford he me mil nowlll,
+Wheir ees nomin lat Heaid ovett and him p
+---------------

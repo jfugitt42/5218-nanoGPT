@@ -1,0 +1,21 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_21
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 1.19M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+And beford will and is by be madiser bube to tand Ond my dolled
+My ard that us him my bardethth ane awill my.
+
+HARENY RGARNG:
+You shat ford he me mitht in buges is ees.
+
+ARKOLO:
+Her dieve so and the 
+---------------

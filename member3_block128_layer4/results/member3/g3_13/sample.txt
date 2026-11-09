@@ -1,0 +1,25 @@
+Overriding: device = cpu
+Overriding: compile = False
+Overriding: out_dir = results/member3/g3_13
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 3.16M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+Wheless.
+
+KING RICHARD IIII:
+Undees that night of dirs?
+
+CAMUS:
+Thy more, dest besented me be shall up you must
+And he comeo is brothech of o.
+
+SICINIUS:
+Why stand stile unhat? Hand with my suchard,
+
+---------------

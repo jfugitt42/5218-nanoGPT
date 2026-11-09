@@ -1,0 +1,17 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_28
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 4.74M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+All thy bridcerf, have so be madient but of enament-day
+Be take he ar have un quet to bared laccaues with my thans
+a with muse of the of is he commilendile,
+We mireets, have latise in ove the the kno
+---------------

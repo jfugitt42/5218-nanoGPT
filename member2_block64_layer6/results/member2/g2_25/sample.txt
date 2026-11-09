@@ -1,0 +1,21 @@
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: out_dir = results/member2/g2_25
+Overriding: start = ROMEO:
+Overriding: num_samples = 1
+Overriding: max_new_tokens = 200
+Overriding: temperature = 0.8
+Overriding: top_k = 40
+Overriding: seed = 1337
+number of parameters: 4.74M
+Loading meta from data/shakespeare_char/meta.pkl...
+ROMEO:
+Ard thy bridce.
+
+Shar lo, but
+Your that you enave reand that tands ar hip foulds, he that ding
+Have aw cham and noth of onoughto thert ford he cove the in that mireets.
+
+ADIOLD YHES:
+Wor the and the 
+---------------
